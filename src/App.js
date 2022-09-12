@@ -1,23 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
-
+import './../src/BaiTapThucHanhLayout/cssComponent.css'
+import HeaderComponent from './BaiTapThucHanhLayout/HeaderComponent copy 2';
+import BodyComponent from './BaiTapThucHanhLayout/BodyComponent';
+import Footercomponent from './BaiTapThucHanhLayout/Footercomponent';
+import SectionBodyComponent from './BaiTapThucHanhLayout/SectionBodyComponent';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <HeaderComponent />
+
+      <BodyComponent />
+      <SectionBodyComponent />
+
+      <Footercomponent />
+
     </div>
   );
 }
